@@ -23,17 +23,17 @@ int main() {
 
     mpz_set_ui(k, 567ul);
 
-    if (P.checkPoint(p) == 1)
+    if (P.checkPoint(p))
         P.checkAnswer(p, k);
     else
         std::cout << "Точка " << P << " не лежит на эллиптической кривой.\n\n";
 
-    if (P1.checkPoint(p) == 1)
+    if (P1.checkPoint(p))
         P1.checkAnswer(p, k);
     else
         std::cout << "Точка " << P1 << " не лежит на эллиптической кривой.\n\n";
 
-    if (P2.checkPoint(p) == 1)
+    if (P2.checkPoint(p))
         P2.checkAnswer(p, k);
     else
         std::cout << "Точка " << P2 << " не лежит на эллиптической кривой.\n\n";
